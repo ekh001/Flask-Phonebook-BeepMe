@@ -8,3 +8,105 @@
 body {
     padding-top: 50px;
 }
+
+h1 {
+    font-family: "Indie Flower", sans-serif;;
+}
+
+nav {
+    background: linear-gradient(#0097fb, #0dcaf0);
+}
+
+img {
+    border-radius: 50%;
+    max-width: 50%;
+    /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.75; */
+  }
+
+.text-center {
+    position: relative;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: black; */
+    text-shadow: 0 0 9px #070404;
+    font-size: 90px;
+    color:aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+/* body {
+    padding-top: 0px;
+  } */
+
+
+.bottom {
+    background: linear-gradient(#0dcaf0, #0097fb);
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    margin-bottom: 0px;
+    justify-content: space-evenly;
+}
+
+.footerimage {
+    width: 500px;
+    padding: 2%;
+    padding-left: 10px;
+}
+
+.bottomimage {
+    width: 500px;
+    border-radius: 0%;
+}
+
+.footinfo {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+    color: aliceblue;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+    color: aliceblue;
+}
+
+.foothead {
+    font-size: 2em;
+}
+
+
+@media (max-width: 300px) {
+    html { font-size: 70%; }
+}
+
+@media (min-width: 500px) {
+    html { font-size: 80%; }
+}
+
+@media (min-width: 700px) {
+    html { font-size: 100%; }
+}
+
+@media (min-width: 1200px) {
+    html { font-size: 120%; }
+}

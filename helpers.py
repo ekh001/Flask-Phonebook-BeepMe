@@ -20,11 +20,12 @@ def token_required(our_flask_function):
             print(token)
             print(current_user_token)
         except:
-            owner = User.query.filter_by(token = token).first()
+            owner=User.query.filter_by(token=token).first()
 
             if token != owner.token and secrets.compare_digest(token, owner.token):
                 return jsonify({'message': 'Token is invalid'})
         return our_flask_function(current_user_token, *args, **kwargs)
+    return decorated
 
 class JSONEncoder(json.JSONEncoder):
     def default(self, obj):
